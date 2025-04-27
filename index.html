@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inchapin</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/imask"></script>
+	<script src="./assets/smooth-scrollbar.js"></script>
+	<script src="script.js" defer type="module"></script>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__left">
+					<button class="header__burger-button burger-button">
+						<span class="burger-button__burger">
+							<span></span>
+						</span>
+						<span class="burger-button__text">МЕНЮ</span>
+					</button>
+					<div class="header__left-right">
+						<a href="tel:+74955272121" class="header__phone-mobile">
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M13.4816 0.666977C13.6456 0.694321 13.755 0.776352 13.8644 0.885727C13.9464 1.02245 14.0011 1.15916 14.0011 1.29588C14.0011 3.59276 13.4269 5.72557 12.2785 7.69432C11.13 9.60838 9.62611 11.1396 7.71205 12.2607C5.7433 13.4092 3.61048 13.9834 1.31361 13.9834C1.14955 13.9834 1.01283 13.956 0.903452 13.8467C0.766733 13.7646 0.684702 13.6279 0.684702 13.4639L0.0284517 10.6201C-0.0262358 10.4834 0.00110792 10.3467 0.0831392 10.1826C0.137827 10.0459 0.247202 9.93651 0.411264 9.88182L3.47376 8.56932C3.58314 8.51463 3.71986 8.51463 3.85658 8.54198C3.9933 8.59666 4.13001 8.65135 4.23939 8.76073L5.57923 10.4014C6.64564 9.90916 7.60267 9.25291 8.42298 8.40526C9.2433 7.58495 9.92689 6.62791 10.4191 5.56151L8.77845 4.22166C8.66908 4.11229 8.58705 4.00291 8.5597 3.8662C8.50501 3.72948 8.53236 3.59276 8.58705 3.45604L9.89955 0.39354C9.95423 0.256821 10.0363 0.147446 10.2003 0.0654146C10.337 0.0107271 10.4738 -0.0166167 10.6378 0.0107271L13.4816 0.666977Z"
+									fill="black" />
+							</svg>
+						</a>
+						<a href="" class="header__logo-mobile header__logo">
+							<img src="img/logo.svg" alt="Inchapin" class="header__logo-img">
+						</a>
+						<button class="header__select btn-hover">
+							<div class="header__select-text btn-hover-text">
+								<span>Выбрать квартиру</span>
+								<span>Выбрать квартиру</span>
+							</div>
+							<svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.2227 0.865234C11.2734 0.941406 11.2988 1.01758 11.2988 1.09375C11.2988 1.19531 11.2734 1.24609 11.2227 1.29688L5.91602 6.62891C5.83984 6.67969 5.76367 6.70508 5.6875 6.70508C5.58594 6.70508 5.53516 6.67969 5.48438 6.62891L0.152344 1.29688C0.101562 1.24609 0.0761719 1.19531 0.0761719 1.09375C0.0761719 1.01758 0.101562 0.941406 0.152344 0.865234L0.660156 0.357422C0.710938 0.306641 0.761719 0.28125 0.863281 0.28125C0.939453 0.28125 1.01562 0.306641 1.0918 0.357422L5.6875 4.95312L10.2832 0.357422C10.334 0.306641 10.4102 0.28125 10.5117 0.28125C10.5879 0.28125 10.6641 0.306641 10.7148 0.357422L11.2227 0.865234Z"
+									fill="white" />
+							</svg>
+						</button>
+					</div>
+
+				</div>
+				<div class="header__middle">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" alt="Inchapin" class="header__logo-img">
+					</a>
+				</div>
+				<div class="header__right">
+					<a href="tel:+74955272121" class="header__phone">
+						+7 495 527 21 21
+					</a>
+					<button class="header__modal-button btn-hover js-modal-open" data-modal-id="feedback">
+						<div class="btn-hover-text">
+							<span>ЗАКАЗАТЬ ЗВОНОК</span>
+							<span>ЗАКАЗАТЬ ЗВОНОК</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main-scrollbar">
+
+		<div class="scroll-content">
+			<section class="intro">
+				<div class="container">
+					<div class="intro__inner">
+						<picture class="intro__picture">
+							<source media="(min-width: 1770px)" srcset="img/intro_1920.jpg">
+							<!-- <source media="(max-width: 768px)" srcset="img/intro_360.jpg"> -->
+							<source media="(max-width: 1024px)" srcset="img/intro_768.jpg">
+							<source media="(max-width: 1280px)" srcset="img/intro_1024.jpg">
+							<img src="img/intro.jpg" alt="" class="intro__img">
+						</picture>
+						<div class="intro__bottom">
+							<h1 class="intro__title">
+								Дом бизнес-класса <br>
+								для ценителей роскоши
+							</h1>
+							<img src="img/intro-logo.svg" alt="Inchapin" class="intro__logo">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__left">
+							<h2 class="about__title">
+								о проекте
+							</h2>
+							<div class="about__img-wrap">
+								<picture class="intro__picture">
+									<source media="(min-width: 1770px)" srcset="img/about_1920.jpg">
+									<source media="(max-width: 1024px)" srcset="img/about_1024.jpg">
+									<img src="img/about.jpg" alt="" class="about__img">
+								</picture>
+							</div>
+						</div>
+						<div class="about__right">
+							<div class="about__right-top">
+								<div class="about__description-title">
+									уютное и безопасное <br> пространство для счастливой,<br>
+									<span>спокойной и размеренной <br> жизни</span>
+								</div>
+							</div>
+							<div class="about__right-bottom">
+								<div class="about__text">
+									<span>Квартиры от 65 до 356 м2 с чистовой отделкой,</span> <br>
+									балконами, лоджиями и террасами В собственной<br>
+									ЗАКРЫТОЙ охраняемой территориИ.
+								</div>
+								<div class="about__video-block video-block">
+									<div class="video-block__left">
+										<div class="video-block__title">
+											ВИДЕО о ПРОЕКТЕ
+										</div>
+										<div class="video-block__duration">
+											1:25 минут
+										</div>
+									</div>
+									<span class="video-block__separator"></span>
+									<div class="video-block__right">
+										<button class="video-block__button js-params-modal" data-modal-id="video-modal"
+											data-video="img/video.mp4">
+											<svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.40688 4.12379C9.09766 4.50371 9.09766 5.49629 8.40688 5.87622L1.48192 9.68495C0.815465 10.0515 4.27037e-08 9.56933 7.7604e-08 8.80873L4.27131e-07 1.19127C4.62031e-07 0.430668 0.815467 -0.0514935 1.48192 0.315055L8.40688 4.12379Z"
+													fill="white" />
+											</svg>
+											play
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="scrollbar-track scrollbar-track-x">
+			<div class="scrollbar-thumb scrollbar-thumb-x"></div>
+		</div>
+		<div class="scrollbar-track scrollbar-track-y">
+			<div class="scrollbar-thumb scrollbar-thumb-y"></div>
+		</div>
+
+	</main>
+
+	<div class="modal modal--std" id="feedback">
+		<div class="modal__overlay js-modal-close"></div>
+		<button class="button-close modal__close js-modal-close">
+			<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M27 1L1.00042 26.9996" stroke="black" stroke-linecap="round" />
+				<path d="M1 1L26.9996 26.9996" stroke="black" stroke-linecap="round" />
+			</svg>
+		</button>
+		<div class="modal__content">
+
+			<div class="modal__title">
+				ЗАКАЗАТЬ ЗВОНОК
+			</div>
+
+			<form id="call-form" class="modal--std__form modal-form">
+
+				<div class="modal-form__inputs">
+					<div class="input-field">
+						<input type="text" name="name" id="name" value="" class="input" placeholder="" required>
+						<label for="name">Ваше имя</label>
+					</div>
+					<div class="input-field">
+						<input type="tel" name="tel" value="" id="tel" class="input" placeholder="" required>
+						<label for="tel">Телефон</label>
+					</div>
+					<div class="input-field">
+						<input type="email" name="email" value="" id="email" class="input" placeholder="" required>
+						<label for="email">e-mail</label>
+					</div>
+				</div>
+
+
+				<div class="modal-form__bottom-wrap">
+					<div class="modal-form__policy">
+						Нажимая на кнопку «Отправить», вы ознакомлены и соглашаетесь с <a href="/">
+							политикой обработки персональных данных
+						</a>
+					</div>
+					<button type="submit" class="modal-form__submit btn-hover">
+						<div class="btn-hover-text">
+							<span>ОТПРАВИТЬ</span>
+							<span>ОТПРАВИТЬ</span>
+						</div>
+					</button>
+				</div>
+			</form>
+
+
+		</div>
+	</div>
+
+	<!-- <div class="modal  video-modal " id="video-modal">
+		<div class="modal__overlay js-modal-close"></div>
+		<div class="modal__content">
+			<button class="button-close video-modal__close modal__close js-modal-close">
+				<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="17" cy="17" r="14" fill="#183F35" />
+					<path
+						d="M23.093 24.791L17.3555 19.0535L11.618 24.791L9.91797 23.091L15.6555 17.3535L9.91797 11.616L11.618 9.91602L17.3555 15.6535L23.093 9.91602L24.793 11.616L19.0555 17.3535L24.793 23.091L23.093 24.791Z"
+						fill="url(#paint0_linear_1923_1608)" />
+					<defs>
+						<linearGradient id="paint0_linear_1923_1608" x1="21.0122" y1="9.91602" x2="12.3971" y2="24.791"
+							gradientUnits="userSpaceOnUse">
+							<stop stop-color="#FDE7BB" />
+							<stop offset="0.2" stop-color="#9E6D38" />
+							<stop offset="0.503116" stop-color="#E9B86E" />
+							<stop offset="0.66" stop-color="#9D6933" />
+							<stop offset="0.83" stop-color="#FEE9BF" />
+							<stop offset="1" stop-color="#683E23" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</button>
+			<video src="" class="video" controls autoplay></video>
+		</div>
+	</div> -->
+
+</body>
+
+</html>
