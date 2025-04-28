@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		let introBottomHeight = introInner.querySelector('.intro__bottom').clientHeight
 		doc.style.setProperty('--intro-height', `${window.innerHeight - header.offsetHeight}px`)
 		doc.style.setProperty('--intro-bottom-height', `${introBottomHeight}px`)
-		console.log(introBottomHeight)
 	}
 	window.addEventListener('resize', introHeight)
 	introHeight()
